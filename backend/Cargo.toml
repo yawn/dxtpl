@@ -1,0 +1,13 @@
+[package]
+name = "backend"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+dioxus = { workspace = true, features = ["fullstack"] }
+shared = { workspace = true }
+
+anyhow = { version = "1" }
+axum = { version = "0.7" }
+dioxus-cli-config = { version = "*" }
+tokio = { version = "1", features = ["full"] }

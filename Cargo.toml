@@ -1,0 +1,21 @@
+[workspace]
+members = ["backend", "frontend", "mobile", "shared", "web"]
+resolver = "2"
+
+[workspace.dependencies]
+api = { path = "api" }
+backend = { path = "backend" }
+frontend = { path = "frontend" }
+shared = { path = "shared" }
+
+dioxus = { version = "0.6.2" }
+
+[profile.wasm-dev]
+inherits = "dev"
+opt-level = 1
+
+[profile.server-dev]
+inherits = "dev"
+
+[profile.android-dev]
+inherits = "dev"

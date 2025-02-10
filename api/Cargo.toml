@@ -1,0 +1,12 @@
+[package]
+name = "api"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+backend = { workspace = true, optional = true }
+dioxus = { workspace = true, features = ["fullstack"] }
+shared = { workspace = true }
+
+[features]
+backend = ["dep:backend"]

@@ -1,0 +1,9 @@
+[package]
+name = "frontend"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+api = { workspace = true }
+dioxus = { workspace = true }
+shared = { workspace = true }

@@ -1,0 +1,15 @@
+[package]
+name = "web"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+api = { workspace = true }
+backend = { workspace = true, optional = true }
+dioxus = { workspace = true, features = ["router"] }
+frontend = { workspace = true }
+shared = { workspace = true }
+
+[features]
+web = ["dioxus/web"]
+server = ["api/backend", "backend", "dioxus/server"]
